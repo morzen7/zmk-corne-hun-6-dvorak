@@ -74,10 +74,10 @@
    &none     &none        &none        &none            &none          &none               &none           &hm PG_UP UP     &none               &kp PRINTSCREEN   &kp ESC            &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
 //        | win/command | CTRL        | ALT           | SHIFT        | ALT GR          | |  LEFT(HOME)    |  TAB          | RIGHT(CTRL +R)     |                |  DEL            |    
-   &none     &kp LGUI     &kp LCTRL     &kp LALT        &kp LSHIFT     &kp RALT             &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT     &none           &kp DEL           &none
+   &none     &kp LGUI     &kp LCTRL     &kp LALT        &kp LSHIFT     &kp RALT           &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT     &none           &kp DEL           &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
 //        |             |             |               |              |                 | |   HOME         | DOWN(PG_DN)   |   END              |                |                 |     
-   &none     none&        &none         &none           &none           &none               &kp HOME       &hm PG_DN DOWN    &kp END             &none             &trans            &none
+   &none     &none        &none         &none           &none           &none               &kp HOME       &hm PG_DN DOWN    &kp END             &none             &trans            &none
 //        ╰─────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┴─────────────────╯
 //                                    |               |              |                 | |                |               |                    |   
                                         &trans           &trans         &trans              &trans           &mo 3          &trans 
