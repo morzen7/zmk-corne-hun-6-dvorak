@@ -13,7 +13,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -49,17 +49,17 @@
                         label = "Base";
                         bindings = <
 //          ╭───────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────────┬───────────────────┬───────────────╮
-//          |  ALT          |  q          |  w          |  e(é)       |  t (r)      | |  u(ú)       |  i(í)       |  o(ó)           |  p                |    ESC        | 
-     &none     &kp LALT        &kp Q        &kp W         &hm SEMI E    &hm R T          &hm RBKT U    &hm RA(J) I   &hm EQUAL O       &kp P                 &kp ESC      &none      
+//          |  f            |  u(ú)       |  p          |  d          |  y          | |  g          |  v          |  h              |  ö(ő)             |   q           | 
+     &none     &kp F           &hm RBKT U    &kp P         &kp D         &kp Z           &kp G         &kp V         &kp H            &hm LBKT NUMBER_0     &kp Q         &none      
 //          ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┼───────────────┤
-//          |  SHIFT        |  a (á)      |  s          |  d (shift)  |  f(g)       | |  j(h)       |  k          |  l              |  BSPC             |    DEL        |    
-     &none     &kp LSHIFT      &hm SQT A    &kp S         &hm LSHIFT D   &hm G F         &hm H J       &kp K         &kp L             &kp BSPC              &kp DEL      &none  
+//          |  o(ó)         |  t          |  l          |  e(é) _     |  s          | |  a (á) _    |  i(í)       |  n              |  k                |    r          |    
+     &none     &hm EQUAL O     &kp T         &kp L         &hm SEMI E     &kp S          &hm SQT A    &hm RA(J) I    &kp N             &kp K                &kp R        &none  
 //          ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┼───────────────┤
-//          |  CTRL         |  z(y)       |  x          |  c          |  v          | |  n(m)       |  b          |  , (.)          |  - (_)            |   ALT GR      |    
-     &none     &kp LCTRL      &hm Z Y       &kp X         &kp C         &kp V            &hm M N       &kp B        &hm DOT COMMA     &hm LS(FSLH) FSLH     &kp RALT      &none
+//          |  x            |  j          |  ü(ű)       |   c         |  z          | |  b          |  m          |  , (.)          |  - (_)            |   w           |    
+     &none     &kp X          &kp J       &hm BSLH MINUS   &kp C        &kp Y            &kp B         &kp M        &hm DOT COMMA     &hm LS(FSLH) FSLH    &kp W         &none
 //          ╰───────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┴───────────────╯
-//                                        |  TAB        |             |  SPACE      | |  ENTER      |             |  GUI            |                           
-                                             &kp TAB       &mo 1        &kp SPACE        &kp RET       &mo 2         &kp LGUI
+//                                        |  SHIFT      |             |  SPACE      | |  ENTER      |             |  BSPC           |                           
+                                             &kp LSHIFT     &mo 1        &kp SPACE        &kp RET       &mo 2        &kp BSPC
 //                                        ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────────╯                                         
 
                         >;
@@ -70,14 +70,14 @@
                         label = "NAVI";
                         bindings = <
 //        ╭─────────────┬─────────────┬───────────────┬──────────────┬─────────────────╮ ╭────────────────┬───────────────┬────────────────────┬────────────────┬─────────────────╮
-//        |             |             | é             |              | r               | |  ü(ű)          | UP(PAGE UP)   |   ö(ő)             | PRINTSCREEN    |                 |    
-   &none     &trans        &none        &kp SEMI        &none          &kp R               &hm BSLH MINUS   &hm PG_UP UP    &hm LBKT NUMBER_0    &kp PRINTSCREEN   &trans            &none
+//        |             |             |               |              |                 | |                | UP(PAGE UP)   |                    | PRINTSCREEN    | ESC             |    
+   &none     &none        &none        &none            &none          &none               &none           &hm PG_UP UP     &none               &kp PRINTSCREEN   &kp ESC            &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
-//        |             |  á          |               |              | g               | |  LEFT(HOME)    |  TAB          | RIGHT(CTRL +R)     |                |  BSPC           |    
-   &none     &trans        &kp SQT      &none            &none         &kp G               &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT     &trans          &kp BSPC          &none
+//        | win/command | CTRL        | ALT           | SHIFT        | ALT GR          | |  LEFT(HOME)    |  TAB          | RIGHT(CTRL +R)     |                |  DEL            |    
+   &none     &kp LGUI     &kp LCTRL     &kp LALT        &kp LSHIFT     &kp RALT             &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT     &none           &kp DEL           &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
-//        |             |  z          |               |              |                 | |   HOME         | DOWN(PG_DN)   |   END              |                |                 |     
-   &none     &trans        &kp Z        &none           &none           &none               &kp HOME       &hm PG_DN DOWN    &kp END             &trans            &trans            &none
+//        |             |             |               |              |                 | |   HOME         | DOWN(PG_DN)   |   END              |                |                 |     
+   &none     none&        &none         &none           &none           &none               &kp HOME       &hm PG_DN DOWN    &kp END             &none             &trans            &none
 //        ╰─────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┴─────────────────╯
 //                                    |               |              |                 | |                |               |                    |   
                                         &trans           &trans         &trans              &trans           &mo 3          &trans 
