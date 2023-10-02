@@ -73,11 +73,11 @@
 //        |             |             |               |              |                 | |                | UP(PAGE UP)   |                    | PRINTSCREEN    | ESC             |    
    &none     &none        &none        &none            &none          &none               &none           &hm PG_UP UP     &none               &kp PRINTSCREEN   &kp ESC            &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
-//        | win/command | CTRL        | ALT           | SHIFT        | ALT GR          | |  LEFT(HOME)    |  TAB          | RIGHT(CTRL +R)     |                |  DEL            |    
-   &none     &kp LGUI     &kp LCTRL     &kp LALT        &kp LSHIFT     &kp RALT           &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT     &none           &kp DEL           &none
+//        | win/command | SHIFT       | ALT           |  CTRL        | ALT GR          | |  LEFT(HOME)    |  TAB          | RIGHT(CTRL +R)     |                |  DEL            |    
+   &none     &kp LGUI     &kp LSHIFT    &kp LALT         &kp LCTRL     &kp RALT           &hm LC(LEFT) LEFT  &kp TAB      &hm LC(RIGHT) RIGHT     &none           &kp DEL           &none
 //        ├─────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┼─────────────────┤
 //        |  ctrl + y   | ctrl + z    | ctrl + x      |  ctrl + c    |   ctrl + V      | |   HOME         | DOWN(PG_DN)   |   END              |                |                 |     
-   &none     &kp LC(Z)    &kp LC(Y)     &kp LC(X)        &kp LC(C)        &kp LC(V)           &kp HOME       &hm PG_DN DOWN    &kp END             &none             &trans            &none
+   &none     &kp LC(Z)    &kp LC(Y)     &kp LC(X)        &kp LC(C)       &kp LC(V)           &kp HOME       &hm PG_DN DOWN    &kp END             &none             &trans            &none
 //        ╰─────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────┼───────────────┼────────────────────┼────────────────┴─────────────────╯
 //                                    | CTRL          |              |                 | |                |               | DEL                |   
                                         &kp LCTRL        &trans         &trans              &trans           &mo 3          &kp DEL  
