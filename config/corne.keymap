@@ -47,7 +47,7 @@
                 combo_ctrl_ctv {
                     timeout-ms = <50>;
                     key-positions = <5 17>;
-                    bindings = <&kp LC(C) LC(T) LC(V) RET>;
+                    bindings = <&kp LC(C T V)>;
                 };
 
         };
