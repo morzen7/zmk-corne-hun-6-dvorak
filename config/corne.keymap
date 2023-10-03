@@ -69,7 +69,7 @@
      &none     &kp X          &kp J       &hm BSLH MINUS   &kp C        &kp Y            &kp B         &kp M        &hm DOT COMMA     &hm LS(FSLH) FSLH    &hm BSPC W     &none
 //          ╰───────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┴───────────────╯
 //                                        |  SHIFT      |             |  SPACE      | |  ENTER      |             |  CTRL           |                           
-                                             &kp LSHIFT     &mo 1        &kp SPACE        &kp RET       &mo 2        &kp LCTRL
+                                             &kp LSHIFT     &mo 1        &kp SPACE       &kp RET       &mo 2         &kp LCTRL
 //                                        ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────────╯                                         
 
                         >;
