@@ -20,6 +20,20 @@
         };
     };
 
+        macros {
+            ctrl_ctv: ctrl_ctv {
+                label = "ctrl_ctv";
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings
+                    = <&macro_press &kp LCTRL>
+                    , <&macro_tap &kp C &kp T &kp V>
+                    , <&macro_release &kp LCTRL>
+                    , <&macro_tap &kp RET>
+                    ;
+            };
+        };
+
         combos{
                 compatible = "zmk,combos";
                 combo_alt_shift_up {
@@ -41,17 +55,18 @@
                 };
                 combo_ctrl_f {
                     timeout-ms = <50>;
-                    key-positions = <16 17>;
+                    key-positions = <4 5>;
                     bindings = <&kp LC(F)>;
                 };
                 combo_ctrl_ctv {
                     timeout-ms = <50>;
-                    key-positions = <5 17>;
-                    bindings = <&kp LC(C) &kp LC(T) &kp LC(V) &kp RET>;
+                    key-positions = <16 17>;
+                    bindings = <&ctrl_ctv>;
                 };
 
         };
-        
+
+         
         keymap {
                 compatible = "zmk,keymap";
 
