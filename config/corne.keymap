@@ -1,4 +1,4 @@
-/*
+x/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -80,8 +80,8 @@
 //          |  o(ó)         |  t          |  l          |  e(é) _     |  s          | |  i(í) _     |  n          |   a (á)         |  k                |   r           |    
      &none     &hm EQUAL O     &kp T         &kp L         &hm SEMI E     &kp S         &hm RA(J) I    &kp N          &hm SQT A        &kp K                &kp R         &none  
 //          ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┼───────────────┤
-//          |  x            |  j          |  ü(ű)       |   c         |  z          | |  b          |  m          |  , (.)          |  - (_)            |   w (BSPC)    |    
-     &none     &kp X          &kp J       &hm BSLH MINUS   &kp C        &kp Y            &kp B         &kp M        &hm DOT COMMA     &hm LS(FSLH) FSLH    &hm BSPC W     &none
+//          |  x            |  ü(ű)       |  j          |   c         |  z          | |  b          |  m          |  , (.)          |  - (_)            |   w (BSPC)    |    
+     &none     &kp X         &hm BSLH MINUS  &kp J          &kp C        &kp Y            &kp B         &kp M        &hm DOT COMMA     &hm LS(FSLH) FSLH    &hm BSPC W     &none
 //          ╰───────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┴───────────────╯
 //                                        |  SHIFT      |             |  SPACE      | |  ENTER      |             |  CTRL           |                           
                                              &kp LSHIFT     &mo 1        &kp SPACE       &kp RET       &mo 2         &kp LCTRL
