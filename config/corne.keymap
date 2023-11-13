@@ -84,7 +84,7 @@
      &kp RA(J)   &kp RBKT       &kp MINUS      &kp C          &kp Y        &kp B           &kp SEMI      &kp M        &hm DOT COMMA     &hm LS(FSLH) FSLH    &kp X           &hm Q W
 // ╰──────────┴───────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┴───────────────┴────────────╯
 //                                          |  SHIFT      |             |  SPACE      | |  ENTER      |             |  CTRL           |                           
-                                             &  kp LSHIFT     &mo 1        &kp SPACE       &kp RET       &mo 2         &kp LCTRL
+                                               &kp LSHIFT     &mo 1        &kp SPACE       &kp RET       &mo 2         &kp LCTRL
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────────╯                                         
 
                         >;
