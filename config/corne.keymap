@@ -86,7 +86,7 @@
      &kp O       &kp T           &kp L         &kp E         &kp S         &kp SQT         &kp I         &kp N          &kp A            &kp K                &kp R         &kp BSLH  
 // ├──────────┼───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┼───────────────┼────────────┤    
 // | í        |  ú            |  ü          |  c          |   z         |  b          | |  é          |  m          |  , (.)          |  - (_)            |   x           |  w(q)      | 
-     &kp RA(J)   &kp RBKT       &kp MINUS      &kp C          &kp Y        &kp B           &kp SEMI      &kp M        &hm DOT COMMA     &hm LS(FSLH) FSLH    &kp X           &hm Q W
+     &kp NUBS    &kp RBKT       &kp MINUS      &kp C          &kp Y        &kp B           &kp SEMI      &kp M        &hm DOT COMMA     &hm LS(FSLH) FSLH    &kp X           &hm Q W
 // ╰──────────┴───────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┴───────────────┴────────────╯
 //                                          |  SHIFT      |             |  SPACE      | |  ENTER      |             |  CTRL           |                           
                                                &kp LSHIFT     &mo 1        &kp SPACE       &kp RET       &mo 2         &kp LCTRL
