@@ -106,8 +106,8 @@
 // |          |              |             |               |  ALT         |  SHIFT          | |  LEFT(HOME)        |  TAB          | RIGHT(CTRL +R)     |  BSPC          |  DEL         |            | 
       &none     &none           &none         &none           &kp LALT       &kp LSHIFT          &hm LC(LEFT) LEFT    &kp TAB        &hm LC(RIGHT) RIGHT   &kp BSPC         &kp DEL         &none
 // ├──────────┼──────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────────┼───────────────┼────────────────────┼────────────────┼──────────────┼────────────┤
-// |          |              |             |  ctrl + c     |  ctrl + z    |   ctrl + v      | |   HOME             | DOWN(PG_DN)   |   END              |                |  BSPC        |            |       
-     &none       &none           &none        &kp LC(C)       &kp LC(Z)       &kp LC(V)           &kp HOME           &hm PG_DN DOWN    &kp END             &none            &kp BSPC        &none
+// |          |              |             |               |              |                 | |   HOME             | DOWN(PG_DN)   |   END              |                |  BSPC        |            |       
+     &none       &none           &none        &none           &none           &none               &kp HOME           &hm PG_DN DOWN    &kp END             &none            &kp BSPC        &none
 // ╰──────────┴──────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────────┼───────────────┼────────────────────┼────────────────┴──────────────┴────────────╯
 //                                         |               |              |                 | |                    |               |                    |   
                                                 &trans          &trans         &trans              &trans              &mo 3          &mo 1   
