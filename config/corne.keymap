@@ -89,7 +89,7 @@
      &kp NUBS    &kp RBKT       &kp MINUS      &kp C          &kp Y        &kp B           &kp SEMI      &kp M        &hm DOT COMMA     &hm LS(FSLH) FSLH    &kp X           &hm Q W
 // ╰──────────┴───────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┴───────────────┴────────────╯
 //                                          |  SHIFT      |             |  SPACE      | |  ENTER      |             |  CTRL           |                           
-                                               &kp LSHIFT     &mo 1        &kp SPACE       &kp RET       &mo 2         &kp LCTRL
+                                               &kp LSHIFT     &mo 2        &kp SPACE       &kp RET       &mo 1         &kp LCTRL
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────────╯                                         
 
                         >;
@@ -100,17 +100,17 @@
                         label = "Nav & F";
                         bindings = <
 // ╭──────────┬──────────────┬─────────────┬───────────────┬──────────────┬─────────────────╮ ╭────────────────────┬───────────────┬────────────────────┬────────────────┬──────────────┬────────────╮
-// | F1       |  F2          |  F3         |  F4           |   ALT GR     |                 | |                    | UP(PAGE UP)   |                    | PRINTSCREEN    |              |   ESC      |    
-     &kp F1      &kp F2        &kp F3         &kp F4          &kp RALT       &none                &none              &hm PG_UP UP     &none               &kp PRINTSCREEN    &none          &kp ESC
+// | F1       |  F2          |  F3         |  F4           |   ALT GR     |  CTRL           | |                    | UP(PAGE UP)   |                    | PRINTSCREEN    |              |   ESC      |    
+     &kp F1      &kp F2         &kp F3        &kp F4          &kp RALT       &kp LCTRL            &none              &hm PG_UP UP     &none               &kp PRINTSCREEN    &none          &kp ESC
 // ├──────────┼──────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────────┼───────────────┼────────────────────┼────────────────┼──────────────┼────────────┤
-// |  F5      |  F6          |  F7         |  F8           |  ALT         |                 | |  LEFT(HOME)        |  TAB          | RIGHT(CTRL +R)     |  BSPC          |  DEL         |            | 
-      &kp F5     &kp F6         &kp F7        &kp F8          &kp LALT       &none               &hm LC(LEFT) LEFT    &kp TAB        &hm LC(RIGHT) RIGHT   &kp BSPC         &kp DEL         &none
+// |  F5      |  F6          |  F7         |  F8           |  ALT         |  RCTRL          | |  LEFT(HOME)        |  TAB          | RIGHT(CTRL +R)     |  BSPC          |  DEL         |            | 
+      &kp F5     &kp F6         &kp F7        &kp F8          &kp LALT       &kp RCTRL           &hm LC(LEFT) LEFT    &kp TAB        &hm LC(RIGHT) RIGHT   &kp BSPC         &kp DEL         &none
 // ├──────────┼──────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────────┼───────────────┼────────────────────┼────────────────┼──────────────┼────────────┤
-// | F9       |  F10         |  F11        |  F12          |              |                 | |   HOME             | DOWN(PG_DN)   |   END              |                |  BSPC        |            |       
-     &kp F9      &kp F10        &kp F11       &kp F12           &none        &none                &kp HOME           &hm PG_DN DOWN    &kp END             &none            &kp BSPC        &none
+// | F9       |  F10         |  F11        |  F12          |              |  win/command    | |  HOME              | DOWN(PG_DN)   |   END              |                |  BSPC        |            |       
+     &kp F9      &kp F10        &kp F11       &kp F12           &none        &kp LGUI            &kp HOME           &hm PG_DN DOWN     &kp END             &none            &kp BSPC        &none
 // ╰──────────┴──────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├────────────────────┼───────────────┼────────────────────┼────────────────┴──────────────┴────────────╯
 //                                         |               |              |                 | |                    |               |                    |   
-                                                &trans          &trans         &trans              &trans              &trans          &mo 1   
+                                                &trans          &trans         &trans              &trans              &trans         &trans   
 //                                         ╰───────────────┴──────────────┴─────────────────╯ ╰────────────────────┴───────────────┴────────────────────╯                                         
 
                         >;
@@ -130,8 +130,8 @@
 // | $          |  !              |  +          |  "|"            |  <>             |  { }                | |  1          |   2         |  3          | ctrl + /          |  BT3          | bt prof clear |     
      &kp RA(SEMI)  &kp LS(N4)         &kp HASH      &kp RA(W)       &hm RA(Z) RA(M)    &hm RA(N) RA(B)         &kp N1         &kp N2       &kp N3       &kp LC(KP_DIVIDE)    &bt BT_CLR     &bt BT_CLR   
 // ╰────────────┴─────────────────┴─────────────┼─────────────────┼─────────────────┼─────────────────────┤ ├─────────────┼─────────────┼─────────────┼───────────────────┴───────────────┴───────────────╯
-//                                              |                 |  win/command    |                     | |             |             |             |     
-                                                    &trans           &kp LGUI             &trans                 &trans        &trans        &trans
+//                                              |                 |                 |                     | |             |             |             |     
+                                                    &trans           &trans             &trans                 &trans        &trans        &trans
 //                                              ╰─────────────────┴─────────────────┴─────────────────────╯ ╰─────────────┴─────────────┴─────────────╯                                         
                                                                                                                      
                         >;
