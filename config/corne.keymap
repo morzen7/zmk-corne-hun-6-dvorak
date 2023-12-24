@@ -70,7 +70,7 @@
                 };
                 combo_bt_delete {
                     timeout-ms = <50>;
-                    key-positions = <52 64>;
+                    key-positions = <106 118>;
                     bindings = <&bt BT_CLR>;
                 };
 
