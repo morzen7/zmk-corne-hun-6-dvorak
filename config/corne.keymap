@@ -132,7 +132,7 @@
       &kp RA(C)   &kp KP_MULTIPLY   &kp PRCNT    &hm RA(N9) LS(N7)      &kp RA(V)         &hm RA(G) RA(F)        &hm LC(LEFT) LEFT      &kp TAB        &hm LC(RIGHT) RIGHT    &kp BSPC            &kp DEL         &none
 // ├────────────┼─────────────────┼─────────────┼────────────────────┼─────────────────┼─────────────────────┤ ├─────────────────────┼───────────────┼─────────────────────┼───────────────────┼───────────────┼───────────────┤
 // | $          |  !              |  +          |  "|"               |  <>             |  { }                | |  HOME               | DOWN(PG_DN)   |   END               |                   |  BSPC         |               | 118   
-     &kp RA(SEMI)  &kp LS(N4)         &kp HASH      &kp RA(W)           &hm RA(Z) RA(M)    &hm RA(N) RA(B)          &kp HOME            &hm PG_DN DOWN    &kp END              &none               &kp BSPC        &none
+     &kp RA(SEMI)  &kp LS(N4)         &kp HASH      &kp RA(W)           &hm RA(Z) RA(M)    &hm RA(N) RA(B)          &kp HOME            &hm PG_DN DOWN    &kp END              &none               &kp BSPC       &bt BT_CLR
 // ╰────────────┴─────────────────┴─────────────┼────────────────────┼─────────────────┼─────────────────────┤ ├─────────────────────┼───────────────┼─────────────────────┼───────────────────┴───────────────┴───────────────╯
 //                                              |  copy (paste)      |                 |                     | |                     |               |                     |   123  
                                                    &hm LC(V) LC(C)       &trans             &trans                 &trans                &trans           &trans
