@@ -105,11 +105,11 @@
                         label = "F & NUM";
                         bindings = <
 // ╭──────────┬──────────────┬─────────────┬───────────────┬──────────────┬─────────────────╮ ╭─────────────┬─────────────┬─────────────┬───────────────────┬───────────────┬───────────────╮
-// | F1       |  F2          |  F3         |  F4           |   ALT GR     |  CTRL           | |  7          |   8         |  9          |  mac 0            |               |  BT1          | 52   
-     &kp F1      &kp F2         &kp F3        &kp F4          &kp RALT       &kp LCTRL           &kp N7         &kp N8       &kp N9        &kp KP_N0           &none           &bt BT_SEL 0  
+// | F1       |  F2          |  F3         |  F4           |   ALT GR     |  CTRL           | |  7          |   8         |  9          |  mac 0            | BT3           |  BT1          | 52   
+     &kp F1      &kp F2         &kp F3        &kp F4          &kp RALT       &kp LCTRL           &kp N7         &kp N8       &kp N9        &kp KP_N0          &bt BT_SEL 3     &bt BT_SEL 0  
 // ├──────────┼──────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├─────────────┼─────────────┼─────────────┼───────────────────┼───────────────┼───────────────┤
 // |  F5      |  F6          |  F7         |  F8           |  ALT         |  RCTRL          | |  4          |   5         |  6          |  0                | DEL           |  BT2          | 64
-      &kp F5     &kp F6         &kp F7        &kp F8          &kp LALT       &kp RCTRL           &kp N4          &kp N5       &kp N6      &kp GRAVE           &kp DEL          &bt BT_SEL 3
+      &kp F5     &kp F6         &kp F7        &kp F8          &kp LALT       &kp RCTRL           &kp N4          &kp N5       &kp N6      &kp GRAVE           &kp DEL          &bt BT_SEL 1
 // ├──────────┼──────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├─────────────┼─────────────┼─────────────┼───────────────────┼───────────────┼───────────────┤
 // | F9       |  F10         |  F11        |  F12          |              |  win/command    | |  1          |   2         |  3          | ctrl + /          |  BSPC         | BT3           | 76      
      &kp F9      &kp F10        &kp F11       &kp F12           &none        &kp LGUI            &kp N1         &kp N2       &kp N3       &kp LC(KP_DIVIDE)    &kp BSPC       &bt BT_SEL 2   
