@@ -83,8 +83,8 @@
 // | j        |  f            |  u          |  p          |  d          |  y          | |  g          |  v          |  h              |  ö                |  ő            |  ó         |11
      &kp J       &kp F           &kp  U        &kp P         &kp D         &kp Z           &kp G         &kp V         &kp H             &kp NUMBER_0        &kp LBKT        &kp EQUAL      
 // ├──────────┼───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┼───────────────┼────────────┤
-// | o        |  t            |  l          |  e          |  s _        |  á          | |  i _        |  n          |   a             |  k                |   r           | ű          |23
-     &kp O       &kp T           &kp L         &kp E         &kp S         &kp SQT         &kp I         &kp N          &kp A            &kp K                &kp R         &kp BSLH  
+// | o        |  t            |  l          |  e          |  s _        |  á          | |  i          |  n _        |   a             |  k                |   r           | ű          |23
+     &kp O       &kp T           &kp L         &kp E         &kp S         &kp HU_A_ACUTE  &kp I         &kp N          &kp A            &kp K                &kp R         &kp BSLH  
 // ├──────────┼───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┼───────────────┼────────────┤    
 // | í        |  ú            |  ü          |  c          |   z         |  b          | |  é          |  m          |  , (.)          |  - (_)            |   x           |  w(q)      |35 
      &kp NUBS    &kp RBKT       &kp MINUS      &kp C          &kp Y        &kp B           &kp SEMI      &kp M        &hm DOT COMMA     &hm LS(FSLH) FSLH    &kp X           &hm Q W
@@ -125,7 +125,7 @@
       &kp RA(U)     &kp RA(N1)       &kp RA(X)     &hm AT EXCL         &hm RA(Q) CARET  &hm LPAR LS(NUMBER_8)     &kp BSPC             &hm PG_UP UP     &kp DEL              &kp PRINTSCREEN      &none            &kp ESC
 // ├────────────┼─────────────────┼─────────────┼────────────────────┼─────────────────┼─────────────────────┤ ├─────────────────────┼───────────────┼─────────────────────┼───────────────────┼───────────────┼───────────────┤    
 // |  &         |  *              |  %          |  = (' mac)         |  @              |  [ ]                | | LEFT(HOME)          |  TAB          | RIGHT(CTRL +R)      |  BSPC             |  DEL          |               | 106   
-      &kp RA(C)   &kp KP_MULTIPLY   &kp PRCNT    &hm RA(N9) LS(N7)      &kp RA(V)        &hm HU_LBKT HU_RBKT     &hm LC(LEFT) LEFT      &kp TAB        &hm LC(RIGHT) RIGHT    &kp BSPC            &none            &none
+      &kp RA(C)   &kp KP_MULTIPLY   &kp PRCNT    &hm RA(N9) LS(N7)      &kp RA(V)         &hm LBKT RBKT          &hm LC(LEFT) LEFT      &kp TAB        &hm LC(RIGHT) RIGHT    &kp BSPC            &none            &none
 // ├────────────┼─────────────────┼─────────────┼────────────────────┼─────────────────┼─────────────────────┤ ├─────────────────────┼───────────────┼─────────────────────┼───────────────────┼───────────────┼───────────────┤
 // | $          |  !              |  +          |  "|"               |  <>             |  { }                | |  HOME               | DOWN(PG_DN)   |   END               |                   |  BSPC         |               | 118   
      &kp RA(SEMI)  &kp LS(N4)         &kp HASH      &kp RA(W)           &hm RA(Z) RA(M)    &hm RA(N) RA(B)          &kp HOME            &hm PG_DN DOWN    &kp END              &none              &bt BT_CLR       &none
