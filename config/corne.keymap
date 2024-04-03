@@ -87,7 +87,7 @@
      &kp O       &kp T           &kp L         &kp E         &kp S         &kp HU_A_ACUTE  &kp I         &kp N          &kp A            &kp K                &kp R         &kp BSLH  
 // ├──────────┼───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┼───────────────┼────────────┤    
 // | í        |  ú            |  ü          |  c          |   z         |  b          | |  é          |  m          |  , (.)          |  - (_)            |   x           |  w(q)      |35 
-     &kp NUBS    &kp RBKT       &kp MINUS      &kp C          &kp Y        &kp B           &kp SEMI      &kp M        &hm DOT COMMA     &hm LS(FSLH) FSLH    &kp X           &hm Q W
+     &kp HU_I_ACUTE    &kp RBKT       &kp MINUS      &kp C          &kp Y        &kp B           &kp SEMI      &kp M        &hm DOT COMMA     &hm LS(FSLH) FSLH    &kp X           &hm Q W
 // ╰──────────┴───────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────────┼───────────────────┴───────────────┴────────────╯
 //                                          |  SHIFT      |             |  SPACE      | |  ENTER      |             |  CTRL           |  41                         
                                                &kp LSHIFT     &mo 2        &kp SPACE       &kp RET       &mo 1         &kp LCTRL
@@ -101,14 +101,14 @@
                         label = "F & NUM";
                         bindings = <
 // ╭──────────┬──────────────┬─────────────┬───────────────┬──────────────┬─────────────────╮ ╭─────────────┬─────────────┬─────────────┬───────────────────┬───────────────┬───────────────╮
-// | F1       |  F2          |  F3         |  F4           |   ALT GR     |  CTRL           | |  7          |   8         |  9          |  mac 0            | BT3           |  BT1          | 52   
-     &kp F1      &kp F2         &kp F3        &kp F4          &kp RALT       &kp LCTRL           &kp N7         &kp N8       &kp N9        &kp KP_N0          &bt BT_SEL 3     &bt BT_SEL 0  
+// | F1       |  F2          |  F3         |  F4           |   F5         |  F6             | |  7          |   8         |  9          |  mac 0            | BT3           |  BT1          | 52   
+     &kp F1      &kp F2         &kp F3        &kp F4          &kp F5         &kp F6              &kp N7         &kp N8       &kp N9        &kp KP_N0          &bt BT_SEL 3     &bt BT_SEL 0  
 // ├──────────┼──────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├─────────────┼─────────────┼─────────────┼───────────────────┼───────────────┼───────────────┤
-// |  F5      |  F6          |  F7         |  F8           |  ALT         |  RCTRL          | |  4          |   5         |  6          |  0                | DEL           |  BT2          | 64
-      &kp F5     &kp F6         &kp F7        &kp F8          &kp LALT       &kp RCTRL           &kp N4          &kp N5       &kp N6      &kp GRAVE           &kp DEL          &bt BT_SEL 1
+// |  F7      |  F8          |  F9         |  F10          |  F11         |  F12            | |  4          |   5         |  6          |  0                | DEL           |  BT2          | 64
+      &kp F7     &kp F8         &kp F9        &kp F10         &kp F11        &kp F12            &kp N4          &kp N5       &kp N6        &kp GRAVE          &kp DEL          &bt BT_SEL 1
 // ├──────────┼──────────────┼─────────────┼───────────────┼──────────────┼─────────────────┤ ├─────────────┼─────────────┼─────────────┼───────────────────┼───────────────┼───────────────┤
-// | F9       |  F10         |  F11        |  F12          |              |  win/command    | |  1          |   2         |  3          | ctrl + /          |  BSPC         | BT3           | 76      
-     &kp F9      &kp F10        &kp F11       &kp F12           &none        &kp LGUI            &kp N1         &kp N2       &kp N3       &kp LC(KP_DIVIDE)    &kp BSPC       &bt BT_SEL 2   
+// |          |  CTRL        | ALT /option |  win/command  |  RCTRL       |  ALT GR         | |  1          |   2         |  3          | ctrl + /          |  BSPC         | BT3           | 76      
+     &none       &kp LCTRL     &kp LALT       &kp LGUI        &kp RCTRL      &kp RALT            &kp N1         &kp N2       &kp N3       &kp LC(KP_DIVIDE)    &kp BSPC       &bt BT_SEL 2   
 // ╰──────────┴──────────────┴─────────────┼───────────────┼──────────────┼─────────────────┤ ├─────────────┼─────────────┼─────────────┼───────────────────┴───────────────┴───────────────╯
 //                                         |               |              |                 | |             |             |             |  82 
                                                 &trans          &trans         &trans            &trans         &trans       &trans   
@@ -121,14 +121,14 @@
                         label = "SIM_NAV";
                         bindings = <
 // ╭────────────┬─────────────────┬─────────────┬────────────────────┬─────────────────┬─────────────────────╮ ╭─────────────────────┬───────────────┬─────────────────────┬───────────────────┬───────────────┬───────────────╮
-// |  €         |   ~             |  #          |  ' (")             |    / \          |  ( )                | |                     | UP(PAGE UP)   |                     | PRINTSCREEN       |               |   ESC         | 94
-      &kp RA(U)     &kp RA(N1)       &kp RA(X)     &hm AT EXCL         &hm RA(Q) CARET  &hm LPAR LS(NUMBER_8)     &kp BSPC             &hm PG_UP UP     &kp DEL              &kp PRINTSCREEN      &none            &kp ESC
+// |  €         |   ~             |  #          |  ' (")             |    / \          |  ( )                | |    BSPC             | UP(PAGE UP)   |  DEL                | PRINTSCREEN       |               |   ESC         | 94
+     &kp HU_EURO   &kp HU_TILDE     &kp HU_HASH    &hm HU_SQT HU_DQT  &hm HU_BSLH HU_FSLH   &hm HU_LPAR HU_RPAR     &kp BSPC           &hm PG_UP UP     &kp DEL              &kp PRINTSCREEN      &none            &kp ESC
 // ├────────────┼─────────────────┼─────────────┼────────────────────┼─────────────────┼─────────────────────┤ ├─────────────────────┼───────────────┼─────────────────────┼───────────────────┼───────────────┼───────────────┤    
 // |  &         |  *              |  %          |  = (' mac)         |  @              |  [ ]                | | LEFT(HOME)          |  TAB          | RIGHT(CTRL +R)      |  BSPC             |  DEL          |               | 106   
-      &kp RA(C)   &kp KP_MULTIPLY   &kp PRCNT    &hm RA(N9) LS(N7)      &kp RA(V)        &hm HU_LBKT HU_RBKT          &hm LC(LEFT) LEFT      &kp TAB        &hm LC(RIGHT) RIGHT    &kp BSPC            &none            &none
+    &kp HU_DOLLAR  &kp HU_STAR      &kp HU_PRCNT   &kp HU_EQUAL         &kp HU_AT        &hm HU_RBKT HU_LBKT     &hm LC(LEFT) LEFT      &kp TAB        &hm LC(RIGHT) RIGHT    &kp BSPC            &none            &none
 // ├────────────┼─────────────────┼─────────────┼────────────────────┼─────────────────┼─────────────────────┤ ├─────────────────────┼───────────────┼─────────────────────┼───────────────────┼───────────────┼───────────────┤
 // | $          |  !              |  +          |  "|"               |  <>             |  { }                | |  HOME               | DOWN(PG_DN)   |   END               |                   |  BSPC         |               | 118   
-     &kp RA(SEMI)  &kp LS(N4)         &kp HASH      &kp RA(W)           &hm RA(Z) RA(M)    &hm RA(N) RA(B)          &kp HOME            &hm PG_DN DOWN    &kp END              &none              &bt BT_CLR       &none
+     &kp HU_DOLLAR  &kp HU_EXCL     &kp HU_PLUS    &kp HU_PIPE         &hm HU_LT HU_GT    &hm HU_LBRC HU_RBRC     &kp HOME             &hm PG_DN DOWN    &kp END              &none              &bt BT_CLR       &none
 // ╰────────────┴─────────────────┴─────────────┼────────────────────┼─────────────────┼─────────────────────┤ ├─────────────────────┼───────────────┼─────────────────────┼───────────────────┴───────────────┴───────────────╯
 //                                              |  copy (paste)      |                 |                     | |                     |               |                     |   123  
                                                    &hm LC(V) LC(C)       &trans             &trans                 &trans                &trans           &trans
