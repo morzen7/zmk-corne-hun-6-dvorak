@@ -82,7 +82,7 @@
                         bindings = <
 // ╭────────────────┬───────────────┬────────────────┬─────────────┬─────────────────┬────────────────╮ ╭───────────────┬─────────────────────┬─────────────────┬───────────────────┬─────────────────────┬───────────────────────╮
 // | j              |  f            |  u             |  p          |  d              |  y             | |  g            |  v                  |  h              |  ö                |  ő                  |  ó (ESC)              |11
-     &kp J             &kp F           &kp  U           &kp P         &kp D             &kp HU_Y           &kp G           &kp V                 &kp H             &kp HU_O_UMLAUT    &kp HU_O_DOUBLE_ACUTE  &hm ESC HU_O_ACUTE      
+     &kp J             &kp F           &kp  U           &kp P         &kp D             &kp HU_Y           &kp G           &kp V                 &kp H             &kp HU_O_UMLAUT    &kp HU_O_DOUBLE_ACUTE  &hm HU_ESC HU_O_ACUTE      
 // ├────────────────┼───────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤ ├───────────────┼─────────────────────┼─────────────────┼───────────────────┼─────────────────────┼───────────────────────┤
 // | o              |  t            |  l (CRTL)      |  e          |  s _(ALT/OPTION)|  á             | |  i            |  n _ (ALT GR/OPTION)|   a             |  k (SHIFT)        |   r                 | ű                     |23
      &kp O             &kp T           &hm RCTRL L      &kp E         &hm LALT S       &kp HU_A_ACUTE      &kp I           &hm RALT N             &kp A            &hm RSHIFT K         &kp R               &kp HU_U_DOUBLE_ACUTE  
