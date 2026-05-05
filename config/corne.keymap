@@ -23,10 +23,6 @@
             compatible = "zmk,behavior-unicode";
             unicode = <0x00E5>; // å
         };
-        uc_adia: uc_adia {
-            compatible = "zmk,behavior-unicode";
-            unicode = <0x00E4>; // ä
-        };
     };
 
         macros {
@@ -91,7 +87,7 @@
      &kp J                &kp F           &kp  U           &kp P         &kp D             &kp HU_Y           &kp G           &kp V                 &kp H             &kp HU_O_UMLAUT    &kp HU_O_DOUBLE_ACUTE  &hm ESC HU_O_ACUTE      
 // ├───────────────────┼───────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤ ├───────────────┼─────────────────────┼─────────────────┼───────────────────┼─────────────────────┼───────────────────────┤
 // | o                 |  t            |  l (CRTL)      |  e          |  s _(ALT/OPTION)|  á             | |  i            |  n _ (ALT/OPTION)   |   a (ä)         |  k (SHIFT)        |   r                 | ű                     |23
-     &kp O                &kp T           &hm RCTRL L      &kp E         &hm LALT S       &hm HU_A_ACUTE      &kp I           &hm LALT N             &hm uc_adia A    &hm RSHIFT K         &kp R               &kp HU_U_DOUBLE_ACUTE  
+     &kp O                &kp T           &hm RCTRL L      &kp E         &hm LALT S       &hm HU_A_ACUTE      &kp I           &hm LALT N           &hm HU_A_UMLAUT A    &hm RSHIFT K         &kp R               &kp HU_U_DOUBLE_ACUTE  
 // ├───────────────────┼───────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤ ├───────────────┼─────────────────────┼─────────────────┼───────────────────┼─────────────────────┼───────────────────────┤    
 // | å (í)             |  ú            |  ü             |  c          |  z (WIN/CONTROL)|  b             | |  é            |  m (FN)             |  , (.)          |  x                |   q                 |  w                    |35 
      &hm RA(J) uc_aring  &kp HU_U_ACUTE  &kp HU_U_UMLAUT  &kp C          &hm LWIN HU_Z     &kp B             &kp HU_E_ACUTE   &hm GLOBE M           &hm DOT COMMA     &kp X                &kp Q                &kp W
