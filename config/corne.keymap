@@ -19,11 +19,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        uc_aring: uc_aring {
-            compatible = "zmk,behavior-unicode";
-            #binding-cells = <0>;
-            unicode = <0x00E5>; // å
-        };
     };
 
         macros {
@@ -91,7 +86,7 @@
      &kp O                &kp T           &hm RCTRL L      &kp E         &hm LALT S       &kp HU_A_ACUTE      &kp I           &hm LALT N           &hm HU_A_UMLAUT A    &hm RSHIFT K         &kp R               &kp HU_U_DOUBLE_ACUTE  
 // ├───────────────────┼───────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤ ├───────────────┼─────────────────────┼─────────────────┼───────────────────┼─────────────────────┼───────────────────────┤    
 // | å                 |  ú            |  ü             |  c          |  z (WIN/CONTROL)|  b             | |  é            |  m (FN)             |  , (.)          |  x                |   q                 |  w                    |35 
-     &uc_aring        &kp HU_U_ACUTE  &kp HU_U_UMLAUT  &kp C          &hm LWIN HU_Z     &kp B             &kp HU_E_ACUTE   &hm GLOBE M           &hm DOT COMMA     &kp X                &kp Q                &kp W
+     &kp HU_A_ACUTE     &kp HU_U_ACUTE  &kp HU_U_UMLAUT  &kp C          &hm LWIN HU_Z     &kp B             &kp HU_E_ACUTE   &hm GLOBE M           &hm DOT COMMA     &kp X                &kp Q                &kp W
 // ╰───────────────────┴───────────────┴────────────────┼─────────────┼─────────────────┼────────────────┤ ├───────────────┼─────────────────────┼─────────────────┼───────────────────┴─────────────────────┴───────────────────────╯
 //                                                      |  SHIFT      |                 |  SPACE         | |  ENTER        |                     |  CTRL           |  41                         
                                                            &kp LSHIFT     &mo 2            &kp SPACE          &kp RET         &mo 1                 &kp LCTRL
