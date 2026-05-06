@@ -1,0 +1,6 @@
+identifier: nice_nano_v2
+name: nice!nano
+type: board
+arch: arm
+qualifiers:
+  - zmk_compat
