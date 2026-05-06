@@ -21,6 +21,7 @@
         };
         uc_aring: uc_aring {
             compatible = "zmk,behavior-unicode";
+            #binding-cells = <0>;
             unicode = <0x00E5>; // å
         };
     };
