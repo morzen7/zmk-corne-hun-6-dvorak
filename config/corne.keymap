@@ -32,6 +32,29 @@
             bindings = <&oe_lower>, <&oe_upper>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        // DEDICATED hold-taps for oe_morph/aa_morph. The generic `hm` above
+        // is hard-wired to &kp on both sides - passing &oe_morph/&aa_morph as
+        // its param turns the phandle into a raw (garbage) keycode instead of
+        // invoking the behavior. These name oe_morph/aa_morph directly as the
+        // hold-side behavior, so HOLD really runs the mod-morph and TAP runs
+        // &kp. The first invocation param is unused (oe_morph/aa_morph take
+        // none) - pass 0.
+        hm_oe: hm_oe {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&oe_morph>, <&kp>;
+        };
+        hm_aa: hm_aa {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&aa_morph>, <&kp>;
+        };
     };
 
         macros {
@@ -143,7 +166,7 @@
      &kp J                &kp F           &kp  U           &kp P         &kp D             &kp HU_Y           &kp G           &kp V                 &kp H             &kp HU_O_UMLAUT    &kp HU_O_DOUBLE_ACUTE  &hm ESC HU_O_ACUTE      
 // ├───────────────────┼───────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤ ├───────────────┼─────────────────────┼─────────────────┼───────────────────┼─────────────────────┼───────────────────────┤
 // | o (Ø)             |  t            |  l (CRTL)      |  e          |  s _(ALT/OPTION)|  á (å)         | |  i            |  n _ (ALT/OPTION)   |   a (ä)         |  k (SHIFT)        |   r                 | ű                     |23
-     &hm &oe_morph O      &kp T           &hm RCTRL L      &kp E         &hm LALT S     &hm &aa_morph HU_A_ACUTE      &kp I           &hm LALT N           &hm HU_A_UMLAUT A    &hm RSHIFT K         &kp R               &kp HU_U_DOUBLE_ACUTE  
+     &hm_oe 0 O           &kp T           &hm RCTRL L      &kp E         &hm LALT S     &hm_aa 0 HU_A_ACUTEE  &kp I           &hm LALT N          &hm HU_A_UMLAUT A   &hm RSHIFT K         &kp R               &kp HU_U_DOUBLE_ACUTE  
 // ├───────────────────┼───────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤ ├───────────────┼─────────────────────┼─────────────────┼───────────────────┼─────────────────────┼───────────────────────┤    
 // | í                 |  ú            |  ü             |  c          |  z (WIN/CONTROL)|  b             | |  é            |  m (FN)             |  , (.)          |  x                |   q                 |  w                    |35 
      &kp HU_I_ACUTE      &kp HU_U_ACUTE  &kp HU_U_UMLAUT  &kp C          &hm LWIN HU_Z     &kp B             &kp HU_E_ACUTE   &hm GLOBE M           &hm DOT COMMA     &kp X                &kp Q                &kp W
