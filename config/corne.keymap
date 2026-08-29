@@ -32,7 +32,7 @@
                     , <&macro_tap &kp RET>
                     ;
             };
-            unicode_Oslash: unicode_Oslash {
+            u_Oslash: u_Oslash {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
                 wait-ms = <10>;
@@ -105,8 +105,8 @@
 // | j                 |  f            |  u             |  p          |  d              |  y             | |  g            |  v                  |  h              |  ö                |  ő                  |  ó (ESC)              |11
      &kp J                &kp F           &kp  U           &kp P         &kp D             &kp HU_Y           &kp G           &kp V                 &kp H             &kp HU_O_UMLAUT    &kp HU_O_DOUBLE_ACUTE  &hm ESC HU_O_ACUTE      
 // ├───────────────────┼───────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤ ├───────────────┼─────────────────────┼─────────────────┼───────────────────┼─────────────────────┼───────────────────────┤
-// | o (å)             |  t            |  l (CRTL)      |  e          |  s _(ALT/OPTION)|  á             | |  i            |  n _ (ALT/OPTION)   |   a (ä)         |  k (SHIFT)        |   r                 | ű                     |23
-     &kp O                &kp T           &hm RCTRL L      &kp E         &hm LALT S       &kp HU_A_ACUTE      &kp I           &hm LALT N           &hm HU_A_UMLAUT A    &hm RSHIFT K         &kp R               &kp HU_U_DOUBLE_ACUTE  
+// | o (Ø)             |  t            |  l (CRTL)      |  e          |  s _(ALT/OPTION)|  á (å)         | |  i            |  n _ (ALT/OPTION)   |   a (ä)         |  k (SHIFT)        |   r                 | ű                     |23
+     &hm u_Oslash O         &kp T           &hm RCTRL L      &kp E         &hm LALT S       &hm a_ring HU_A_ACUTE      &kp I           &hm LALT N           &hm HU_A_UMLAUT A    &hm RSHIFT K         &kp R               &kp HU_U_DOUBLE_ACUTE  
 // ├───────────────────┼───────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤ ├───────────────┼─────────────────────┼─────────────────┼───────────────────┼─────────────────────┼───────────────────────┤    
 // | í                 |  ú            |  ü             |  c          |  z (WIN/CONTROL)|  b             | |  é            |  m (FN)             |  , (.)          |  x                |   q                 |  w                    |35 
      &kp HU_I_ACUTE      &kp HU_U_ACUTE  &kp HU_U_UMLAUT  &kp C          &hm LWIN HU_Z     &kp B             &kp HU_E_ACUTE   &hm GLOBE M           &hm DOT COMMA     &kp X                &kp Q                &kp W
