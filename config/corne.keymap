@@ -32,7 +32,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&oe_morph>, <&kp>;
+            bindings = <&oe_lower>, <&kp>;
         };
         hm_aa: hm_aa {
             compatible = "zmk,behavior-hold-tap";
@@ -40,7 +40,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&aa_morph>, <&kp>;
+            bindings = <&aa_lower>, <&kp>;
         };
     };
 
