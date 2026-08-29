@@ -19,19 +19,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        aa_morph: aa_morph {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&aa_lower>, <&aa_upper>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        oe_morph: oe_morph {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&oe_lower>, <&oe_upper>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
         // DEDICATED hold-taps for oe_morph/aa_morph. The generic `hm` above
         // is hard-wired to &kp on both sides - passing &oe_morph/&aa_morph as
         // its param turns the phandle into a raw (garbage) keycode instead of
@@ -68,53 +55,66 @@
                     , <&macro_tap &kp RET>
                     ;
             };
+            // TWO installed languages (Ctrl+Shift+1) and DIRECT per-language
+            // switch hotkeys, not the generic Alt+Shift toggle - four
+            // languages are installed, so a toggle would cycle through all
+            // four instead of flipping Hungarian<->Norwegian. Windows'
+            // "input language hot keys" dialog assigns Ctrl+Shift+<list
+            // position> per language: Hungarian = 1, Norwegian = 2 here. Each
+            // switch macro jumps straight to its target regardless of how
+            // many other languages exist.
+            //
+            // wait-ms is 120, not 5: the OS needs a moment to actually apply
+            // the language switch before the next keystroke is interpreted
+            // under it - firing the letter immediately risks it landing on
+            // the OLD layout still.
+            //
+            // Physical keys used, on the Norwegian layout: the key at the [
+            // position is å/Å, the key at the ; position is ø/Ø.
+            switch_to_no: switch_to_no {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <120>;
+                tap-ms = <5>;
+                bindings
+                    = <&macro_press &kp LCTRL &kp LSHIFT>
+                    , <&macro_tap &kp N2>
+                    , <&macro_release &kp LCTRL &kp LSHIFT>
+                    ;
+            };
+            switch_to_hu: switch_to_hu {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <120>;
+                tap-ms = <5>;
+                bindings
+                    = <&macro_press &kp LCTRL &kp LSHIFT>
+                    , <&macro_tap &kp N1>
+                    , <&macro_release &kp LCTRL &kp LSHIFT>
+                    ;
+            };
             aa_lower: aa_lower {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <5>;
-            tap-ms = <5>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N9>
-                , <&macro_release &kp LALT>
-                ;
-        };
-
-        aa_upper: aa_upper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <5>;
-            tap-ms = <5>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N7>
-                , <&macro_release &kp LALT>
-                ;
-        };
-
-        oe_lower: oe_lower {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <5>;
-            tap-ms = <5>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N8>
-                , <&macro_release &kp LALT>
-                ;
-        };
-
-        oe_upper: oe_upper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <5>;
-            tap-ms = <5>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N6>
-                , <&macro_release &kp LALT>
-                ;
-        };
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <120>;
+                tap-ms = <5>;
+                bindings
+                    = <&macro_tap &switch_to_no>
+                    , <&macro_tap &kp LBKT>
+                    , <&macro_tap &switch_to_hu>
+                    ;
+            };
+            oe_lower: oe_lower {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <120>;
+                tap-ms = <5>;
+                bindings
+                    = <&macro_tap &switch_to_no>
+                    , <&macro_tap &kp SEMI>
+                    , <&macro_tap &switch_to_hu>
+                    ;
+            };
         };
 
         combos{
