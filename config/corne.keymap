@@ -32,30 +32,29 @@
                     , <&macro_tap &kp RET>
                     ;
             };
-            /* Ø U+00D8 */ 
-            unicode_Oslash: unicode_Oslash { 
-            compatible = "zmk,behavior-macro"; 
-            #binding-cells = <0>; 
-            wait-ms = <UNICODE_WAIT>; 
-            tap-ms = <UNICODE_WAIT>; 
-            bindings = <&macro_press &kp LALT>
-                     , <&macro_tap &kp KP_PLUS>
-                     , <&macro_tap &kp N0 &kp N0 &kp D &kp N8>
-                     , <&macro_release &kp LALT>
-                     ; 
-            };
-            
-            a_ring: a_ring {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <UNICODE_WAIT>; 
-            tap-ms = <UNICODE_WAIT>; 
-            bindings = <&macro_press &kp LALT>
-                     , <&macro_tap &kp KP_PLUS>
-                     , <&macro_tap &kp N0 &kp N0 &kp E &kp N5>
-                     , <&macro_release &kp LALT>
-                     ;
-        };
+            unicode_Oslash: unicode_Oslash {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <10>;
+                tap-ms = <10>;
+                bindings = <&macro_press &kp LALT>
+                         , <&macro_tap &kp KP_PLUS>
+                         , <&macro_tap &kp N0 &kp N0 &kp D &kp N8>
+                         , <&macro_release &kp LALT>
+                         ;
+                        };
+
+                a_ring: a_ring {
+                    compatible = "zmk,behavior-macro";
+                    #binding-cells = <0>;
+                    wait-ms = <10>;
+                    tap-ms = <10>;
+                    bindings = <&macro_press &kp LALT>
+                             , <&macro_tap &kp KP_PLUS>
+                             , <&macro_tap &kp N0 &kp N0 &kp E &kp N5>
+                             , <&macro_release &kp LALT>
+                             ;
+                        };
         };
 
         combos{
