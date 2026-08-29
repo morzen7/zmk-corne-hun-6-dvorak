@@ -35,11 +35,8 @@
             u_Oslash: u_Oslash {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
-                wait-ms = <10>;
-                tap-ms = <10>;
                 bindings = <&macro_press &kp LALT>
-                         , <&macro_tap &kp KP_PLUS>
-                         , <&macro_tap &kp N0 &kp N0 &kp D &kp N8>
+                         , <&macro_tap &kp U &kp HU_PLUS &kp N0 &kp N0 &kp D &kp N8>
                          , <&macro_release &kp LALT>
                          ;
                         };
@@ -47,11 +44,8 @@
                 a_ring: a_ring {
                     compatible = "zmk,behavior-macro";
                     #binding-cells = <0>;
-                    wait-ms = <10>;
-                    tap-ms = <10>;
                     bindings = <&macro_press &kp LALT>
-                             , <&macro_tap &kp KP_PLUS>
-                             , <&macro_tap &kp N0 &kp N0 &kp E &kp N5>
+                             ,<&macro_tap &kp U &kp HU_PLUS &kp N0 &kp N0 &kp E &kp N5>
                              , <&macro_release &kp LALT>
                              ;
                         };
