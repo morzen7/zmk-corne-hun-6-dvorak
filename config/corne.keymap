@@ -32,17 +32,29 @@
                     , <&macro_tap &kp RET>
                     ;
             };
+            /* Ø U+00D8 */ 
+            unicode_Oslash: unicode_Oslash { 
+            compatible = "zmk,behavior-macro"; 
+            #binding-cells = <0>; 
+            wait-ms = <UNICODE_WAIT>; 
+            tap-ms = <UNICODE_WAIT>; 
+            bindings = <&macro_press &kp LALT>
+                     , <&macro_tap &kp KP_PLUS>
+                     , <&macro_tap &kp N0 &kp N0 &kp D &kp N8>
+                     , <&macro_release &kp LALT>
+                     ; 
+            };
+            
             a_ring: a_ring {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp LEFT_ALT>
-                , <&kp N0>
-                , <&kp N2>
-                , <&kp N2>
-                , <&kp N9>
-                , <&kp LEFT_ALT>
-                ;
+            wait-ms = <UNICODE_WAIT>; 
+            tap-ms = <UNICODE_WAIT>; 
+            bindings = <&macro_press &kp LALT>
+                     , <&macro_tap &kp KP_PLUS>
+                     , <&macro_tap &kp N0 &kp N0 &kp E &kp N5>
+                     , <&macro_release &kp LALT>
+                     ;
         };
         };
 
@@ -95,7 +107,7 @@
      &kp J                &kp F           &kp  U           &kp P         &kp D             &kp HU_Y           &kp G           &kp V                 &kp H             &kp HU_O_UMLAUT    &kp HU_O_DOUBLE_ACUTE  &hm ESC HU_O_ACUTE      
 // ├───────────────────┼───────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤ ├───────────────┼─────────────────────┼─────────────────┼───────────────────┼─────────────────────┼───────────────────────┤
 // | o (å)             |  t            |  l (CRTL)      |  e          |  s _(ALT/OPTION)|  á             | |  i            |  n _ (ALT/OPTION)   |   a (ä)         |  k (SHIFT)        |   r                 | ű                     |23
-     &hm <&a_ring> <&kp O>  &kp T           &hm RCTRL L      &kp E         &hm LALT S       &kp HU_A_ACUTE      &kp I           &hm LALT N           &hm HU_A_UMLAUT A    &hm RSHIFT K         &kp R               &kp HU_U_DOUBLE_ACUTE  
+     &kp O                &kp T           &hm RCTRL L      &kp E         &hm LALT S       &kp HU_A_ACUTE      &kp I           &hm LALT N           &hm HU_A_UMLAUT A    &hm RSHIFT K         &kp R               &kp HU_U_DOUBLE_ACUTE  
 // ├───────────────────┼───────────────┼────────────────┼─────────────┼─────────────────┼────────────────┤ ├───────────────┼─────────────────────┼─────────────────┼───────────────────┼─────────────────────┼───────────────────────┤    
 // | í                 |  ú            |  ü             |  c          |  z (WIN/CONTROL)|  b             | |  é            |  m (FN)             |  , (.)          |  x                |   q                 |  w                    |35 
      &kp HU_I_ACUTE      &kp HU_U_ACUTE  &kp HU_U_UMLAUT  &kp C          &hm LWIN HU_Z     &kp B             &kp HU_E_ACUTE   &hm GLOBE M           &hm DOT COMMA     &kp X                &kp Q                &kp W
